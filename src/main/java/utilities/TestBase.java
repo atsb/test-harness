@@ -14,8 +14,8 @@ public class TestBase {
     /***
      * SelectDropDownMenuXPATH
      * DropDown Menu Select by XPATH
-     * @param xpath
-     * @param value
+     * @param xpath String
+     * @param value String
      */
     public void SelectDropDownMenuXPATH(String xpath,String value) {
         Select select = new Select(driver.findElement(By.xpath(xpath)));
@@ -24,8 +24,8 @@ public class TestBase {
     /***
      * SelectMultipleChoiceDropDownMenuXPATH
      * DropDown Menu Multiple Choice Select by XPATH
-     * @param xpath
-     * @param value
+     * @param xpath String
+     * @param value String
      */
     public void SelectMultipleChoiceDropDownMenuXPATH(String xpath,String value) {
         Select select = new Select(driver.findElement(By.xpath(xpath)));
@@ -35,7 +35,7 @@ public class TestBase {
     /***
      * FindAndClickByXPATH
      * Find and Click by XPATH
-     * @param xpath
+     * @param xpath String
      */
     public void FindAndClickByXPATH(String xpath) {
         driver.findElement(By.xpath(xpath)).click();
@@ -43,8 +43,8 @@ public class TestBase {
     /***
      * FindAndSendKeysByXPATH
      * Find and SendKeys by XPATH
-     * @param xpath
-     * @param value
+     * @param xpath String
+     * @param value String
      */
     public void FindAndSendKeysByXPATH(String xpath, String value) {
         driver.findElement(By.xpath(xpath)).sendKeys(value);
